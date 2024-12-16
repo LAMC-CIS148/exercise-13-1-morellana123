@@ -1,19 +1,37 @@
 /* the styles for the elements */
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 html {
-	background-color: white;
+  background-color: white;
 }
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 800px;
-    margin: 0 auto;
-    border: 3px solid #800000;
-    background-color: #fffded;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 800px;
+  margin: 0 auto;
+  border: 3px solid #800000;
+  background-color: #fffded;
 }
+
+/* ... (other styles remain unchanged) ... */
+
+/* the styles for the form */
+fieldset {
+  margin: 0;
+  padding: .5em 1em .5em 1em;
+}
+
+legend {
+  color: black;
+  font-weight: bold;
+  font-size: 85%;
+  margin-bottom: .5em;
+}
+
 a:focus, a:hover {
 	font-style: italic;
 }
@@ -46,17 +64,7 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the form */
-fieldset {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-top: .5em;
-}
-legend {
-    color: #931420;
-    font-weight: bold;
-    font-size: 85%;
-    margin-bottom: .5em;
-}
+
 label {
     float: left;
     width: 12em;
@@ -70,21 +78,30 @@ input, select {
     margin-left: .5em;
     margin-bottom: .5em;
 }
-input:required, input[required] {
-	border: 3px solid red;
-}
-input:valid {
-	border: 1px solid black;
-}
+input:required,
+input[required],
 input:invalid {
-	box-shadow: none;
+  border: 2px solid #800000;
+  color: #800000;
 }
+
+input:valid {
+  border: 1px solid black;
+}
+
 br {
     clear: both;
 }
 #buttons input {
 	width: 10em;
 }
+
+#payment_method label {
+  float: none; 
+  width: auto;
+  margin-left: 3em; 
+}
+
 /* the styles for the navigation menu */
 #nav_menu ul {
 	list-style-type: none;
